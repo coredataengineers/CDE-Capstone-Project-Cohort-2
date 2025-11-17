@@ -40,11 +40,11 @@ You have been provided access to the source datasets as detailed below:
   - `Frequency:` It's a Daily Populated Dataset
 
  - Website Complaint Forms
-  - `Description:` Customer-submitted forms with customer id, agent id, complaint type, and resolution status.
-  - `Format:` Database Table
-  - `Data Location:` In a Transactional Postgres Database
-    - Database credentials located here in [SSM Paramter](https://eu-north-1.console.aws.amazon.com/systems-manager/parameters/?region=eu-north-1&tab=Table#list_parameter_filters=Name:Contains:%2Fcoretelecomms%2Fdatabase%2F) in AWS
-  - `Frequency:` It's a Daily Populated Dataset into different table for each day.
+   - `Description:` Customer-submitted forms with customer id, agent id, complaint type, and resolution status.
+   - `Format:` Database Table
+   - `Data Location:` In a Transactional Postgres Database
+     - Database credentials located here in [SSM Paramter](https://eu-north-1.console.aws.amazon.com/systems-manager/parameters/?region=eu-north-1&tab=Table#list_parameter_filters=Name:Contains:%2Fcoretelecomms%2Fdatabase%2F) in AWS
+   - `Frequency:` It's a Daily Populated Dataset into different table for each day.
 
 ### Note: 
 - To retrieve all Data stored on AWS, use your existing credentials to login
