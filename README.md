@@ -50,19 +50,19 @@ The Agents Dataset provided in the google sheet above `MUST` be moved to your ow
 
 
 ### Project Objective
-Implement a production-grade solution that covers the following:
+Implement a `Production-Grade` solution that covers the following:
 - Data Ingestion (Raw Layer)
   - Develop an extraction layer that reads data from each source.
   - Store raw, unprocessed data in Cloud Object Storage (e.g., S3, GCS, Azure Blob) in Parquet format.
   - Include metadata tracking like the load time.
-  - Pay Attention to the messy state of the data like
+  - `Pay Attention` to the messy state of the data like
     - Column naming
     - Customers Emails
     - Many more
    
 ### Data Storage and Modeling:
-Design a suitable data warehouse to house these data in a unified and central storage to serve downstream use cases.
-Since the output of your work will be consumed by downstream users for analytics, ML, etc. You must ensure the data is properly transformed and modeled using dbt for easier consumption and querying.
+Design a suitable `Data Warehouse` of choice like Snowflake, Redshift, BigQuery e.t.c to house these data in a unified and central storage to serve downstream use cases.
+Since the output of your work will be consumed by downstream users for Analytics, ML, etc. You `MUST` ensure the data is properly transformed and modeled using dbt for easier consumption and querying.
 
 ### Data Cleaning and Enrichment
 - Perform data cleaning and standardization on the raw data where necessary.
@@ -70,7 +70,7 @@ Since the output of your work will be consumed by downstream users for analytics
 - Make sure the data is of high quality and can be trusted.
 
 ### Orchestration:
-- Apache Airflow must be used for orchestrating the entire workflow, which includes:
+- `Apache Airflow` must be used for orchestrating the entire workflow, which includes:
   - Extracting the data from the different data sources and writing to a data lake.
   - Transforming the data to ensure high quality and trust.
   - Modelling the data for easier consumption and high performant querying.
@@ -81,4 +81,36 @@ Since the output of your work will be consumed by downstream users for analytics
   - Implementing retries.
   - Failure notification/alert.
   - Etc.
+
+### Containerization:
+For reproducibility across environments, 
+- You need to package all your code as a docker image and push the image to a cloud based container registry (e.g docker hub).
+- This includes all your Python codes and DAG.
+
+### CI/CD Pipeline:
+`Continuous Integration` and `Continuous Deployment` (CI/CD) should be integrated to your Github Repository. It should include:
+- `CI` that carries out checks on code linting to ensure code written follows best practices.
+- `CD` to carry out the Build and Push of your python codes to a Cloud based Container Registry.
+
+### Infrastructure as Code (Terraform):
+- All `Cloud Infrastructures` like IAM, Object storage, DB/DW Networking resource provisioning `MUST` be `Terraformed`.
+- `Terraform State` File backend managed in the cloud using an Object Storage.
+
+### BONUS (NOT MANDATORY)
+Derive any insights from the Data Set, any recommendation on what `CoreTelecoms` can do as a result of the data available.
+
+
+### SUBMISSION REQUIREMENTS
+- A `GitHub Repository` containing a well documented `README` of the entire project. It should contain important information like the:
+  - Project overview/background.
+  - Project structure.
+  - Architecture diagram.
+  - Choice of tools and technology.
+  - How to set up the project.
+  - e.t.c.
+A `Power Point` or something similar for presentation of the entire project to the management.
+Project submission will close on the `4th December, 2025`.
+Github link should be submitted in the link HERE.
+
+###  PLEASE REACH OUT ON SLACK IF CLARIFICATION NEEDED.
 
