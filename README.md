@@ -6,7 +6,8 @@
 
 The management is frustrated. Data is stored in different formats. The reporting team manually compiles spreadsheets. No single pipeline exists for this data flow. Reports are delayed. Teams work in silos, e.t.c.
 
-You have been brought in as a data engineer to design and implement a Unified Customer Experience Data Platform that solves these problems. If your platform works, you would help the company save millions in customer churn.
+You have been brought in as a `Data Engineer` to design and implement a `Unified Customer Experience Data Platform ` that solves these problems. If your platform works, you would help the company save millions in `Customer Churn`.
+
 To solve this problem, you have already designed a conceptual end-to-end data platform to bring together data from multiple channels (social media, call center logs, website forms) into a unified data source for analytics, ML and insights
 
 Now, you need to build a physical data platform combining various tools and technologies.
@@ -46,10 +47,13 @@ You have been provided access to the source datasets as detailed below:
   - `Frequency:` It's a Daily Populated Dataset into different table for each day.
 
 ### Note: 
+- To retrieve all Data stored on AWS, use your existing credentials to login
+  - However, the expectation is that your pipeline must be designed to extract the objects from s3.
+  - Full Permissions on s3 and SSM has been given to your user and permission to create Access and Secret Key. DO NOT EXPOSE/PUSH THE KEYS ON GITHUB.
 The Agents Dataset provided in the google sheet above `MUST` be moved to your own `PRIVATE` google sheet , this will allow you to set up all necessary `CREDENTIALS` like `SERVICE ACCOUNT` to be able to communicate with Google API to be able to programatically extract the data from your google spread sheet.
 
 
-### Project Objective
+### PROJECT OBJECTIVES
 Implement a `Production-Grade` solution that covers the following:
 - Data Ingestion (Raw Layer)
   - Develop an extraction layer that reads data from each source.
