@@ -47,7 +47,7 @@ You have been provided access to the source datasets as detailed below:
    - `Frequency:` It's a Daily Populated Dataset into different table for each day.
 
 ### Note: 
-- To retrieve all Data stored on AWS, use your existing credentials to login
+- To retrieve all Data stored on AWS, use your existing credentials to login and ensure you are in the Stockholm Region.
   - However, the expectation is that your pipeline must be designed to extract the objects from s3.
   - Full Permissions on s3 and SSM has been given to your user and permission to create Access and Secret Key. DO NOT EXPOSE/PUSH THE KEYS ON GITHUB.
 The Agents Dataset provided in the google sheet above `MUST` be moved to your own `PRIVATE` google sheet , this will allow you to set up all necessary `CREDENTIALS` like `SERVICE ACCOUNT` to be able to communicate with Google API to be able to programatically extract the data from your google spread sheet.
