@@ -44,12 +44,21 @@ You have been provided access to the source datasets as detailed below:
    - `Format:` Database Table
    - `Data Location:` In a Transactional Postgres Database
      - Database credentials located here in [SSM Paramter](https://eu-north-1.console.aws.amazon.com/systems-manager/parameters/?region=eu-north-1&tab=Table#list_parameter_filters=Name:Contains:%2Fcoretelecomms%2Fdatabase%2F) in AWS
+     - Schema name - `customer_complaints`
+     - Tables
+       - `Web_form_request_2025_11_20`
+       - `Web_form_request_2025_11_21`
+       - `Web_form_request_2025_11_22`
+       - `Web_form_request_2025_11_23`
    - `Frequency:` It's a Daily Populated Dataset into different table for each day.
 
 ### Note: 
 - To retrieve all Data stored on AWS, use your existing credentials to login and ensure you are in the Stockholm Region.
   - However, the expectation is that your pipeline must be designed to extract the objects from s3.
-  - Full Permissions on s3 and SSM has been given to your user and permission to create Access and Secret Key. DO NOT EXPOSE/PUSH THE KEYS ON GITHUB.
+  - Full Permissions on s3 and SSM has been given to your user and permission to create Access and Secret Key.
+
+DO NOT EXPOSE/PUSH THE KEYS ON GITHUB.
+
 The Agents Dataset provided in the google sheet above `MUST` be moved to your own `PRIVATE` google sheet , this will allow you to set up all necessary `CREDENTIALS` like `SERVICE ACCOUNT` to be able to communicate with Google API to be able to programatically extract the data from your google spread sheet.
 
 
