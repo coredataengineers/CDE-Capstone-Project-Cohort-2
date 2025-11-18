@@ -125,7 +125,7 @@ Derive any insights from the Data Set, any recommendation on what `CoreTelecoms`
 A `Power Point` or something similar for presentation of the entire project to the management.
 Project submission will close on the `4th December, 2025`.
 
-Github link should be submitted in the link HERE.
+Github link should be submitted via the link [HERE](https://forms.gle/akrFfwk4dzxGJzmYA).
 
 ###  PLEASE REACH OUT ON SLACK IF CLARIFICATION NEEDED.
 
