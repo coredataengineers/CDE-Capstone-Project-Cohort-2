@@ -112,6 +112,7 @@ Derive any insights from the Data Set, any recommendation on what `CoreTelecoms`
   - Choice of tools and technology.
   - How to set up the project.
   - e.t.c.
+
 A `Power Point` or something similar for presentation of the entire project to the management.
 Project submission will close on the `4th December, 2025`.
 Github link should be submitted in the link HERE.
